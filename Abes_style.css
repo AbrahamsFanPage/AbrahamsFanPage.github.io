@@ -1,0 +1,294 @@
+html{
+    box-sizing: border-box;
+    font-family: Arial, helvetica, sans-serif;
+}
+
+H1 {text-align: center;}
+
+
+.navigations {
+    margin: 1;
+    min-height: var(--nav-height);
+    border:none
+}
+
+.navigations{
+    position: relative;
+
+}
+
+
+
+.mini-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--nav-height);
+    box-sizing: content-box;
+    width:100%
+}
+
+.mini-header_left{
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+
+.mini-heaer_title{
+    display: flex; 
+    align-items: center;
+    opacity: 1;
+    margin-bottom: -2pz;
+    height: var(--nav-height);
+}
+
+.content-wrapper{
+    max-width: calc(var(--max-width)+var(--body-padding)*2);
+    width: 100%;
+    padding: o var (--body-padding);
+    margin-left: auto;
+    margin-right: auto;
+}
+.mini-header-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    z-index: 101;
+    background : rgb(191, 221, 179);
+    
+
+
+}
+
+.primary-nav{
+    z-index: 100%;
+    top: 0;
+    position: static;
+    width: 100%;
+    
+    margin: auto;
+}
+
+.primary-nav_list-wrapper{
+    height: 100%;
+    border-bottom: 1px var(--color-text);
+}
+
+.primary-nav_list{
+    display: flex;
+    height: 100%;
+    margin: auto;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-start;
+    background:var(--color-background) ;
+    
+}
+
+.primary-nav_item{
+    height: 100%;
+    white-space: nowrap;
+    
+}
+
+.primary-nav_link{
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    background:var(--color-background);
+    color:var(--color-headline-grey);
+    overflow-wrap: normal;
+    padding: 0%;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0);
+    text-decoration: none;
+
+}
+}
+
+.p-0{
+    padding:0;
+}
+
+P {color :rgb(57, 121, 158); font-weight: bold; text-align: center;}
+
+body{
+    background-color: rgb(191, 221, 179);
+    background-image:'images/FrankStella_1.JPG';
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.FrankStella{
+    position: static;
+   
+    
+    flex-direction: column;
+    size: 100px;
+    
+}
+
+.container{
+    border: 1px solid whitesmoke;
+    
+    min-height: 90vh;
+
+    background-image:'images/FrankStella_1.JPG';
+    
+    
+
+    display:grid;
+    grid-template-columns:230px 300px 230px  ;
+    grid-template-rows: 250px 250px;
+    grid-gap: 20px ;
+    grid-auto-flow: dense;
+    justify-content: center;
+    align-content: var(--max-width);
+
+}
+
+.container >* {
+    border: 2px solid rgb(191, 221, 179);
+    background-color: none;
+    padding: 0px;
+    display: image;
+    
+
+}
+
+.item{
+    font-size: 1em;
+    
+}
+
+.item3{
+
+    font-size: 1em;
+    background-color: rgb(191, 221, 179);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2 ;
+    grid-row-end: 4;
+}
+
+.item5{
+
+    font-size: 1em;
+    background-color:rgb(191, 221, 179);
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2 ;
+    grid-row-end: 4;
+}
+
+.item4{
+
+    font-size: 1em;
+    background-color: rgb(191, 221, 179);
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1 ;
+    grid-row-end: 2;
+}
+
+.flexContainer{
+    border: 1px solid #0000;
+    display: flex;
+    padding: 10px;
+    width: 600px;
+    overflow-x: auto;
+    grid-gap: 20px;
+}
+
+
+.flexContainer>* {
+    border: 2px solid green;
+    background-color: black;
+    padding: 100px;
+
+}
+
+.container4{
+    
+    position: absolute;
+    left: 20px;
+    border-bottom-left-radius: 0px;
+    
+
+}
+
+.container5{
+    position: absolute;
+    
+    right: 40px;
+    border-top-right-radius: 0px;
+
+}
+
+.container6{
+    position: absolute;
+    
+    right: 50px;
+    border-top-right-radius: 0px;
+
+}
+
+h3{
+    font-family:'Courier New' , Courier, monospace;
+    
+    font-weight: bold;
+    margin: 0;
+    color :rgb(57, 121, 158); 
+
+}
+
+a{
+    text-decoration: none;
+    color :rgb(57, 121, 158); 
+}
+
+.stacking{
+    --nav-height:100 px;
+    --max-width: 1600px;
+    --body-padding: 16px;
+    --color-text: black;
+    --color-background: whitesmoke;
+
+
+
+}
+
+@media screen and (max-width: 800px){
+    header h1 {
+        font-size: 40px;
+
+    }
+    stack{
+        --player-height: 70px;    
+    }
+    
+
+
+    header p {
+        font-size: 20px;
+        
+    }
+}
+
+@media screen and (max-width: 300px){
+    header h1 {
+        font-size: 20px;
+
+    }
+
+    header P {
+        font-size: 15px;
+        
+    }
+
+
+}
