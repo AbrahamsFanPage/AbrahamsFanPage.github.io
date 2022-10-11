@@ -7,14 +7,32 @@ H1 {text-align: center;}
 
 
 .navigations {
-    margin: 1;
-    min-height: var(--nav-height);
-    border:none
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    background-color:rgb(191, 221, 179);
 }
 
-.navigations{
-    position: relative;
+.nav1{
+    color: rgb(57, 121, 158);
+    font-size: 50%;
+    width: 20%;
+    left: 0%;
+}
 
+.nav2{
+    width: 80%;
+    right: 0%;
+}
+
+.scrollContainer{
+    position:fixed;
+    overflow-y: auto;
+    height: 90%;
+    width: 100%;
+    top: 10%;
 }
 
 
@@ -107,13 +125,13 @@ H1 {text-align: center;}
     text-decoration: none;
 
 }
-}
+
 
 .p-0{
     padding:0;
 }
 
-P {color :rgb(57, 121, 158); font-weight: bold; text-align: center;}
+/* P {color :rgb(57, 121, 158); font-weight: bold; text-align: center;} */
 
 body{
     background-color: rgb(191, 221, 179);
